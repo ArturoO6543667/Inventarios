@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="..\..\..\..\..\..\..\DB\Almacen.cs" Link="DB\Almacen.cs" />
+    <Compile Include="..\..\..\..\..\..\..\DB\Area.cs" Link="DB\Area.cs" />
+    <Compile Include="..\..\..\..\..\..\..\DB\Estante.cs" Link="DB\Estante.cs" />
+    <Compile Include="..\..\..\..\..\..\..\DB\Inventarios_AlmacenesContext.cs" Link="DB\Inventarios_AlmacenesContext.cs" />
+    <Compile Include="..\..\..\..\..\..\..\DB\Sala.cs" Link="DB\Sala.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.9" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.1.9">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.9" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.9">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="DB\" />
+  </ItemGroup>
+
+</Project>
